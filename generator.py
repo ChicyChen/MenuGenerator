@@ -33,8 +33,9 @@ def main():
     args = parser.parse_args()
 
     filename = args.menu
+    num = args.num
+    
     content_list = read_menu(filename)
-    num = 2
     result = select_menu(content_list, num)
     print(result)
     
